@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
+import './App.css'
 
 function App() {
   const [quote, setQuote] = useState('')
@@ -13,11 +14,12 @@ function App() {
   const { author, content } = quote
 
   return (
-    <div>
-      <h1>Random Quote</h1>
+    <div className='quote'>
       <button onClick={getQuote}>Get Quote</button>
-      <h2>{content}</h2>
-      <p>- {author}</p>
+      <div className='quote-content'>
+        <h2>{content}</h2>
+        <p>- {author}</p>
+      </div>
     </div>
   )
 }

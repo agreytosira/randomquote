@@ -1,0 +1,32 @@
+body {
+  background-color: #decefa;
+}
+
+.quote {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-content {
+  max-width: 70%;
+  text-align: center;
+}
+
+.quote button {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  background-color: #7233e0;
+  color: #eaeaea;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quote button:hover {
+  background-color: #5f2dc6;
+}
